@@ -281,6 +281,12 @@ cd frontend
 npm install
 npm start                      # Expo dev server
 npm run test                   # Jest (once tests are added)
+
+# Root helper scripts
+npm run dev:backend            # start backend from repo root
+npm run dev:frontend           # start Expo from repo root
+npm run dev:all                # start both backend and frontend in parallel
+npm run seed                   # build + run backend seed script from repo root
 ```
 
 Happy hacking! 🎉
