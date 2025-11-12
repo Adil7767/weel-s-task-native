@@ -115,6 +115,7 @@ Logs stream in the same terminal. Use `Ctrl+C` to stop; add `-d` to run detached
 > **Note:** If you see `permission denied` when Compose tries to talk to `/var/run/docker.sock`:
 > - **Ubuntu/Linux:** run with `sudo` (`sudo docker compose up --build`) or add your user to the `docker` group (`sudo usermod -aG docker $USER`) and re-login.
 > - **macOS (Docker Desktop):** ensure Docker Desktop is running and that the Tech Preview is turned off; if the socket is still blocked, restart Docker Desktop or sign out/in.
+> - Dependency installs are baked into the Docker build (both backend and frontend run `npm install` in their Dockerfiles), so you do **not** need to run `npm install` manually when starting via Compose.
 
 ### 2. Seed user
 

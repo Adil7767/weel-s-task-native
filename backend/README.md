@@ -40,6 +40,7 @@ npm run seed      # inserts demo user credentials
 ```
 
 The backend Docker container executes `migrate` + `seed` automatically on startup.
+> When using Docker Compose, the backend image runs `npm install` during build—no manual installation needed for containerized runs.
 
 ## 4. Run the Server
 

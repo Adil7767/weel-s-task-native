@@ -33,6 +33,7 @@ Expo CLI opens an interactive menu:
 - press `i` to launch iOS simulator (macOS)
 
 If you want to run the Expo web server inside Docker, use the root `docker-compose.yml` (`docker compose up frontend backend db`).
+> Docker already runs `npm install` during the image build, so you only need to install dependencies manually when developing outside of containers.
 
 ## 4. Available Scripts
 
