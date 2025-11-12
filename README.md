@@ -286,7 +286,7 @@ npm run test                   # Jest (once tests are added)
 npm run dev:backend            # start backend from repo root
 npm run dev:frontend           # start Expo from repo root
 npm run dev:all                # start both backend and frontend in parallel
-npm run seed                   # build + run backend seed script from repo root
+npm run seed                   # build + run backend seed script against localhost Postgres
 ```
 
 Happy hacking! 🎉
