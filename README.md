@@ -112,7 +112,9 @@ Services:
 
 Logs stream in the same terminal. Use `Ctrl+C` to stop; add `-d` to run detached.
 
-> **Note:** On some systems you may see `permission denied` errors when Compose tries to talk to `/var/run/docker.sock`. Either run the command with `sudo` (`sudo docker compose up --build`) or add your user to the `docker` group and re-login.
+> **Note:** If you see `permission denied` when Compose tries to talk to `/var/run/docker.sock`:
+> - **Ubuntu/Linux:** run with `sudo` (`sudo docker compose up --build`) or add your user to the `docker` group (`sudo usermod -aG docker $USER`) and re-login.
+> - **macOS (Docker Desktop):** ensure Docker Desktop is running and that the Tech Preview is turned off; if the socket is still blocked, restart Docker Desktop or sign out/in.
 
 ### 2. Seed user
 
